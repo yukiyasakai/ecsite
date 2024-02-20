@@ -36,7 +36,7 @@
    })
    .then(response => response.text())
    .then(result => {
-     alert('商品 [ ${tdList.item(1).innerText}] を削除しました。 ');
+     alert(`商品 [ ${tdList.item(1).innerText}] を削除しました。 `);
      tdList.item(0).parentElement.remove();
    })
    .catch(error =>{
